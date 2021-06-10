@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   --main-logo-color: #191919;
   --signin-button-background: #6356A5;
 
-  --signin-button-font: Helvetica;
+  --fonts: Helvetica;
   --signin-button-weight: bold;
   --signin-button-size: 12px;
   --signin-button-color: var(--cards-background);
@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background-color: #F5F6F9;
     font-smooth: antialiased;
+    font-family: var(--fonts);
   }
 
   button {

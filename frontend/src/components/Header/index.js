@@ -1,6 +1,6 @@
 import { FaShoppingBag } from 'react-icons/fa';
 import { Container, Content } from './styles';
-import logo from '../../assets/tog-logo2.png';
+import logo from '../../assets/tog-logo.png';
 
 const Header = () => {
   return (
