@@ -1,0 +1,36 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+:root {
+  --body-background-color: #F5F6F9;
+  --blue-color: #20C5D2;
+  --cards-background: #ffffff;
+  --cards-title-color: #000000;
+  --gray-cart-color: #A9A7B1;
+  --items-background: #FEC92E;
+  --main-logo-color: #191919;
+  --signin-button-background: #6356A5;
+
+  --signin-button-font: Helvetica;
+  --signin-button-weight: bold;
+  --signin-button-size: 12px;
+  --signin-button-color: var(--cards-background);
+}
+
+*, html, body, #root {
+  margin: 0;
+  padding: 0
+  outline: none !important;
+}
+
+body {
+    background-color: #F5F6F9;
+    font-smooth: antialiased;
+  }
+
+  button {
+    cursor: pointer;
+  }
+`;
+
+export default GlobalStyle;
