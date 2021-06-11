@@ -49,7 +49,7 @@ const Cards = () => {
     <Card>
       <div className="header">
         <img src={item.postImage} alt="trend-log" />
-        <p>What was the trend in 2020 and you didn&apos;t use it</p>
+        <p>{item.postDescription}</p>
       </div>
       <footer>
         <div className="user">
@@ -65,7 +65,7 @@ const Cards = () => {
         <div className="posts-info">
           <div className="theme">
             <p className="title">themes</p>
-            <p className="description">{item.postDescription}</p>
+            <p className="description">{item.description}</p>
           </div>
           <div className="temps">
             <p className="title">temps</p>

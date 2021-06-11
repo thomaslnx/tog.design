@@ -38,6 +38,12 @@ export const Content = styled.div`
         width: 17px;
         color: var(--body-background-color);
       }
+
+      transition: 0.3s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
     }
 
     .signin {
@@ -50,6 +56,12 @@ export const Content = styled.div`
       color: var(--signin-button-color);
       font-size: var(--signin-button-size);
       font-weight: var(--signin-button-weight);
+
+      transition: 0.3s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
     }
   }
 `;
