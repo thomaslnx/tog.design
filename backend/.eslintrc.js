@@ -14,5 +14,6 @@ module.exports = {
     'prettier/prettier': 'error',
     'global-require': 'off',
     'import/no-dynamic-require': 'off',
+    'class-methods-use-this': 'off',
   },
 };
