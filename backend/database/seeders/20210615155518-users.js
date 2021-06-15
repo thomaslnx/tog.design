@@ -1,4 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
+const bcrypt = require('bcrypt');
 
 module.exports = {
   up: async (queryInterface) =>
@@ -6,14 +7,14 @@ module.exports = {
       {
         id: uuidv4(),
         email: 'marcos@togdesign.com.br',
-        password: '123456',
+        password: await bcrypt.hash('123456', 8),
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         id: uuidv4(),
         email: 'togdesign@togdesign.com.br',
-        password: '123456',
+        password: await bcrypt.hash('123456', 8),
         createdAt: new Date(),
         updatedAt: new Date(),
       },
