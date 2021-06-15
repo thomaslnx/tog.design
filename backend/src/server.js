@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-// const jwt = require('jsonwebtoken');
+const db = require('../models');
 
-// const { response } = require('express');
 const routes = require('./routes');
 
 const SessionController = require('./Controllers/SessionController');
@@ -13,16 +12,7 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 app.use(routes);
-
-// function CheckAuthMiddleware(req, res) {
-//   const { authorization } = req.headers;
-
-//   if (!authorization) {
-//     return response.status(401).json({
-//       error: 'Token invalid/not present',
-//     });
-//   }
-// }
+db.sequelize.sync();
 
 app.post('/session', SessionController.create);
 

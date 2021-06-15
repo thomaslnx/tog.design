@@ -2,11 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 
-const config = require('../config/database');
+const { database } = require('../config/database');
 
 const basename = path.basename(__filename);
 const db = {};
-const sequelize = new Sequelize(config);
+const sequelize = new Sequelize(database);
 
 fs.readdirSync(__dirname)
   .filter(
@@ -29,5 +29,7 @@ Object.keys(db).forEach((modelName) => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
+db.user = require('./user')(sequelize, Sequelize);
 
 module.exports = db;
