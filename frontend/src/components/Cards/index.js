@@ -7,6 +7,7 @@ import cycle from '../../assets/cycle/cycle.png';
 
 const cardInfo = [
   {
+    id: 1,
     avatar,
     postImage: trend,
     name: 'Daniel Alves',
@@ -16,6 +17,7 @@ const cardInfo = [
     readingTime: '4 minutes',
   },
   {
+    id: 2,
     avatar,
     postImage: design,
     name: 'Daniel Alves',
@@ -25,6 +27,7 @@ const cardInfo = [
     readingTime: '4 minutes',
   },
   {
+    id: 3,
     avatar,
     postImage: thinking,
     name: 'Daniel Alves',
@@ -34,6 +37,7 @@ const cardInfo = [
     readingTime: '4 minutes',
   },
   {
+    id: 4,
     avatar,
     postImage: cycle,
     name: 'Daniel Alves',
@@ -46,7 +50,7 @@ const cardInfo = [
 
 const Cards = () => {
   const cardsComponent = cardInfo.map((item) => (
-    <Card>
+    <Card key={item.id}>
       <div className="header">
         <img src={item.postImage} alt="trend-log" />
         <p>{item.postDescription}</p>

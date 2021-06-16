@@ -15,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
   --signin-button-weight: bold;
   --signin-button-size: 12px;
   --signin-button-color: var(--cards-background);
+  --signin-header-font: 'Bai Jamjuree', sans-serif;
+  --placeholder-font: 'Roboto', sans-serif;
+  --forgot-password-link: 'Montserrat', sans-serif;
 }
 
 *, html, body, #root {
