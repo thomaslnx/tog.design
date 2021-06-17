@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   --items-background: #FEC92E;
   --main-logo-color: #191919;
   --signin-button-background: #6356A5;
+  --aside-dashboard-menu: #ECEDF3;
 
   --fonts: Helvetica;
   --signin-button-weight: bold;

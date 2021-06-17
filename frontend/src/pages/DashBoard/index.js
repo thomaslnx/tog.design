@@ -1,6 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
 
 import CartButton from '../../components/CartButton';
+import BestSellersTable from '../../components/BestSellersTable';
 
 import {
   Container,
@@ -32,9 +33,14 @@ const DashBoard = () => {
         </ButtonsContainer>
       </Header>
       <Content>
-        <Graph />
-        <BestSellers />
-        <AsideMenu />
+        <Graph className="graph">
+          <span>Your sales for the last 7 days</span>
+        </Graph>
+        <BestSellers className="best">
+          <span>Your best sellers</span>
+          <BestSellersTable />
+        </BestSellers>
+        <AsideMenu className="menu">Menu Lateral</AsideMenu>
       </Content>
     </Container>
   );

@@ -10,7 +10,7 @@ export const Header = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 120px;
   margin: 32px auto 0;
 
@@ -38,12 +38,61 @@ export const WriteNowButton = styled.button`
   color: var(--cards-background);
 `;
 
-export const CartButton = styled.button``;
+export const Content = styled.div`
+  max-width: 1680px;
+  margin: 48px 50px 42px auto;
+  display: grid;
+  align-self: end;
+  grid-template-areas:
+    'graph graph menu'
+    'best best menu';
 
-export const Content = styled.div``;
+  & > .graph {
+    grid-area: graph;
+  }
+  & > .best {
+    grid-area: best;
+  }
+  & > .menu {
+    grid-area: menu;
+  }
+`;
 
-export const Graph = styled.div``;
+export const Graph = styled.div`
+  width: 1000px;
+  height: 389px;
+  border: none;
+  justify-self: start;
+  border-radius: 16px;
+  background-color: var(--cards-background);
+  font-family: var(--forgot-password-link);
+  font-size: 20px;
+  padding: 25px 35px 19px;
+  box-sizing: border-box;
+`;
 
-export const BestSellers = styled.div``;
+export const BestSellers = styled.div`
+  width: 1000px;
+  height: 389px;
+  margin-top: 32px;
+  border: none;
+  justify-self: start;
+  border-radius: 16px;
+  background-color: var(--cards-background);
+  padding: 25px 35px 19px;
+  box-sizing: border-box;
 
-export const AsideMenu = styled.aside``;
+  span {
+    font-family: var(--forgot-password-link);
+    font-size: 20px;
+  }
+`;
+
+export const AsideMenu = styled.aside`
+  width: 520px;
+  height: 810px;
+  border: none;
+  justify-self: end;
+  border-radius: 24px;
+  background-color: var(--aside-dashboard-menu);
+`;
