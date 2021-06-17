@@ -56,6 +56,10 @@ export const Content = styled.div`
       color: var(--signin-button-color);
       font-size: var(--signin-button-size);
       font-weight: var(--signin-button-weight);
+      text-decoration: none;
+      text-align: center;
+      padding-top: 11px;
+      box-sizing: border-box;
 
       transition: 0.3s;
 
