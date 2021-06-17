@@ -1,9 +1,11 @@
 import { useAuth0 } from '@auth0/auth0-react';
 
+import Loading from '../../components/Loading';
 import CartButton from '../../components/CartButton';
 import BestSellersTable from '../../components/BestSellersTable';
 
 import {
+  LoadContainer,
   Container,
   Header,
   ButtonsContainer,
@@ -20,7 +22,11 @@ const DashBoard = () => {
   const { isLoading } = useAuth0();
 
   if (isLoading) {
-    return <h1>carregando...</h1>;
+    return (
+      <LoadContainer>
+        <Loading />
+      </LoadContainer>
+    );
   }
   return (
     <Container>

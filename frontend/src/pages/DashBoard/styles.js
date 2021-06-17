@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const LoadContainer = styled.div`
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin auto auto;
+`;
+
 export const Container = styled.main`
   display: block;
   width: 100vw;
