@@ -19,7 +19,16 @@ const Login = () => {
 
         <Link to="/">Forgot your password?</Link>
 
-        <button type="button" onClick={() => loginWithRedirect()}>
+        <button
+          type="button"
+          onClick={() =>
+            loginWithRedirect({
+              appState: {
+                returnTo: '/dashboard',
+              },
+            })
+          }
+        >
           Sign in
         </button>
       </Form>

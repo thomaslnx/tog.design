@@ -7,8 +7,13 @@ const Auth0ProviderWithHistory = ({ children }) => {
 
   const history = useHistory();
 
+  // history.push(appState?.returnTo || window.location.pathname);
   const onRedirectCallback = (appState) => {
-    history.push(appState?.returnTo || window.location.pathname);
+    history.push(
+      appState && appState.returnTo
+        ? appState.returnTo
+        : window.location.pathname
+    );
   };
 
   return (

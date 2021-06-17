@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 :root {
   --body-background-color: #F5F6F9;
-  --blue-color: #20C5D2;
+  --write-now-button-background: #20C5D2;
   --cards-background: #ffffff;
   --cards-title-color: #000000;
   --gray-cart-color: #A9A7B1;
