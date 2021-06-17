@@ -1,4 +1,3 @@
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 import Routes from './routes';
@@ -10,9 +9,7 @@ function App() {
       clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
       redirectUri={window.location.origin}
     >
-      <Router>
-        <Routes />
-      </Router>
+      <Routes />
     </Auth0Provider>
   );
 }

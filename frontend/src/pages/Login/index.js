@@ -1,9 +1,12 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 import { Container, Header, Form } from './styles';
 import logo from '../../assets/tog-logo.png';
 
 const Login = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <Container>
       <Header>
@@ -14,11 +17,11 @@ const Login = () => {
         <input type="email" name="email" placeholder="E-mail" />
         <input type="password" name="password" placeholder="Password" />
 
-        <Router>
-          <Link to="/">Forgot your password?</Link>
-        </Router>
+        <Link to="/">Forgot your password?</Link>
 
-        <button type="submit">Sign in</button>
+        <button type="button" onClick={() => loginWithRedirect()}>
+          Sign in
+        </button>
       </Form>
     </Container>
   );
