@@ -12,6 +12,12 @@ const GlobalStyle = createGlobalStyle`
   --signin-button-background: #6356A5;
   --aside-dashboard-menu: #ECEDF3;
   --chart-line: #5da249;
+  --dashboard-button-background: #f9fafd;
+  --published-bar: #21c8d4;
+  --sales-bar: #fec72e;
+  --read-bar: #fd8453;
+  --purchased-bar: #1e3a6f;
+  --creation-bar: #f697b5;
 
   --fonts: Helvetica;
   --signin-button-weight: bold;
@@ -29,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    background-color: #F5F6F9;
+    background-color: var(--body-background-color);
     font-smooth: antialiased;
     font-family: var(--fonts);
   }

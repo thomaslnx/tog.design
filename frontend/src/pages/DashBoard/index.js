@@ -4,6 +4,7 @@ import Loading from '../../components/Loading';
 import CartButton from '../../components/CartButton';
 import BestSellersTable from '../../components/BestSellersTable';
 import Chart from '../../components/Chart';
+import DashboardMenu from '../../components/DashboardMenu';
 
 import {
   LoadContainer,
@@ -48,7 +49,9 @@ const DashBoard = () => {
           <span>Your best sellers</span>
           <BestSellersTable />
         </BestSellers>
-        <AsideMenu className="menu">Menu Lateral</AsideMenu>
+        <AsideMenu className="menu">
+          <DashboardMenu />
+        </AsideMenu>
       </Content>
     </Container>
   );
