@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   --main-logo-color: #191919;
   --signin-button-background: #6356A5;
   --aside-dashboard-menu: #ECEDF3;
+  --chart-line: #5da249;
 
   --fonts: Helvetica;
   --signin-button-weight: bold;

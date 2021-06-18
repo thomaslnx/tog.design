@@ -73,9 +73,18 @@ export const Graph = styled.div`
   border-radius: 16px;
   background-color: var(--cards-background);
   font-family: var(--forgot-password-link);
-  font-size: 20px;
+  font-size: 8px;
   padding: 25px 35px 19px;
   box-sizing: border-box;
+
+  tspan {
+    x: 5;
+  }
+
+  span {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
 `;
 
 export const BestSellers = styled.div`

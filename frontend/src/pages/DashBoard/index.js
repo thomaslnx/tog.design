@@ -3,6 +3,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import Loading from '../../components/Loading';
 import CartButton from '../../components/CartButton';
 import BestSellersTable from '../../components/BestSellersTable';
+import Chart from '../../components/Chart';
 
 import {
   LoadContainer,
@@ -41,6 +42,7 @@ const DashBoard = () => {
       <Content>
         <Graph className="graph">
           <span>Your sales for the last 7 days</span>
+          <Chart />
         </Graph>
         <BestSellers className="best">
           <span>Your best sellers</span>
