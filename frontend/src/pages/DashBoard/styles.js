@@ -77,10 +77,6 @@ export const Graph = styled.div`
   padding: 25px 35px 19px;
   box-sizing: border-box;
 
-  tspan {
-    x: 5;
-  }
-
   span {
     padding-bottom: 20px;
     font-size: 20px;

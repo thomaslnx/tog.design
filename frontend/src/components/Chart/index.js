@@ -6,7 +6,6 @@ import {
   YAxis,
   Tooltip,
 } from 'recharts';
-import { Container } from './styles';
 
 const data = [
   {
@@ -64,25 +63,29 @@ const CustomizedXAxisLabels = (props) => {
 
 const Chart = () => {
   return (
-    <Container>
-      <LineChart
-        layout="horizontal"
-        width={920}
-        height={345}
-        data={data}
-        margin={{
-          top: 30,
-          right: 30,
-          bottom: 40,
-        }}
-      >
-        <CartesianGrid stroke="#3d3d3d" strokeWidth={0.4} />
-        <XAxis dataKey="date" tick={<CustomizedXAxisLabels />} />
-        <YAxis tickMargin={30} />
-        <Tooltip />
-        <Line dataKey="vendas" stroke="#5da249" activeDot={{ r: 8 }} />
-      </LineChart>
-    </Container>
+    <LineChart
+      layout="horizontal"
+      width={920}
+      height={345}
+      data={data}
+      margin={{
+        top: 30,
+        right: 30,
+        bottom: 40,
+      }}
+    >
+      <CartesianGrid stroke="#3d3d3d" strokeWidth={0.4} />
+      <XAxis dataKey="date" tick={<CustomizedXAxisLabels />} />
+      <YAxis tickMargin={30} />
+      <Tooltip />
+      <Line
+        dataKey="vendas"
+        stroke="#5da249"
+        strokeWidth={2}
+        activeDot={{ r: 10 }}
+        dot={{ strokeWidth: 6 }}
+      />
+    </LineChart>
   );
 };
 
