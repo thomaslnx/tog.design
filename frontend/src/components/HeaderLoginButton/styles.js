@@ -12,7 +12,6 @@ export const Button = styled.button`
   font-weight: var(--signin-button-weight);
   text-decoration: none;
   text-align: center;
-  padding-top: 11px;
   box-sizing: border-box;
 
   transition: 0.3s;

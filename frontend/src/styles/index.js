@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
   --read-bar: #fd8453;
   --purchased-bar: #1e3a6f;
   --creation-bar: #f697b5;
+  --placeholder-color: #3d3d3d;
+  --checkout-button-color: #292c35;
 
   --fonts: Helvetica;
   --signin-button-weight: bold;
