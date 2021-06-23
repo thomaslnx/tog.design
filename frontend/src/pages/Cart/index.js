@@ -1,4 +1,5 @@
 import { FaTrashAlt } from 'react-icons/fa';
+import { useAuth0 } from '@auth0/auth0-react';
 import {
   Container,
   CartItems,
@@ -9,10 +10,22 @@ import {
 } from './styles';
 
 import CartButton from '../../components/CartButton';
-import HeaderLoginButton from '../../components/HeaderLoginButton';
+import AuthenticationButton from '../../components/AuthenticationButton';
 import logo from '../../assets/tog-logo.png';
+import { LoadContainer } from '../DashBoard/styles';
+import Loading from '../../components/Loading';
 
 const Cart = () => {
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return (
+      <LoadContainer>
+        <Loading />
+      </LoadContainer>
+    );
+  }
+
   return (
     <Container>
       <CartItems>
@@ -66,7 +79,7 @@ const Cart = () => {
         <header>
           <CartButton />
 
-          <HeaderLoginButton />
+          <AuthenticationButton />
         </header>
         <Content>
           <span>Resume</span>

@@ -17,7 +17,7 @@ import {
   BestSellers,
   AsideMenu,
 } from './styles';
-import LogoutButton from '../../components/LogoutButton';
+import AuthenticationButton from '../../components/AuthenticationButton';
 import logo from '../../assets/tog-logo.png';
 
 const DashBoard = () => {
@@ -37,7 +37,7 @@ const DashBoard = () => {
         <ButtonsContainer>
           <WriteNowButton>Write now</WriteNowButton>
           <CartButton />
-          <LogoutButton />
+          <AuthenticationButton />
         </ButtonsContainer>
       </Header>
       <Content>
