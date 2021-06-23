@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
 import { Container, Content } from './styles';
 import logo from '../../assets/tog-logo.png';
+
+import AuthenticationButton from '../AuthenticationButton';
 
 const Header = () => {
   return (
@@ -14,9 +16,10 @@ const Header = () => {
           <button className="cart" type="button">
             <FaShoppingBag />
           </button>
-          <Link to="/login" className="signin">
+          {/* <Link to="/login" className="signin">
             Sign In
-          </Link>
+          </Link> */}
+          <AuthenticationButton />
         </div>
       </Content>
     </Container>
