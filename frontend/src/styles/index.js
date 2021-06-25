@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
 *, html, body, #root {
   margin: 0;
-  padding: 0
+  padding: 0;
   outline: none !important;
 }
 
@@ -44,6 +44,24 @@ body {
 
   button {
     cursor: pointer;
+  }
+
+  input {
+    &::webkit-placeholder {
+      vertical-align: center;
+    }
+
+    &::-moz-placeholder {
+      vertical-align: center;
+    }
+
+    &:-ms-input-placeholder {
+      vertical-align: center;
+    }
+
+    &:-moz-placeholder {
+      vertical-align: center;
+    }
   }
 `;
 
