@@ -1,10 +1,13 @@
 import { FaShoppingBag } from 'react-icons/fa';
+import { useHistory } from 'react-router-dom';
 import { Container, Content } from './styles';
 import logo from '../../assets/tog-logo.png';
 
 import AuthenticationButton from '../AuthenticationButton';
 
 const Header = () => {
+  const history = useHistory();
+  const redirectToCart = () => history.push('/cart');
   return (
     <Container>
       <Content>
@@ -12,7 +15,7 @@ const Header = () => {
           <img src={logo} alt="tog-logo" />
         </div>
         <div className="login">
-          <button className="cart" type="button">
+          <button className="cart" onClick={redirectToCart} type="button">
             <FaShoppingBag />
           </button>
           <AuthenticationButton />
